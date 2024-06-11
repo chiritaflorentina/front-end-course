@@ -43,4 +43,22 @@ let isAuthenticated = true;
 //let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 let authenticationStatus= isAuthenticated?"Authenticated":"Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+var person="Enrolled Member";
+var acces;
+switch(person)
+{
+    case "Employee":
+        acces="Dietary Services";
+        break;
+    case "Enrolled Member":
+        acces="Dietary Services and one-on-one interaction with a dietician";
+        break;
+    case "Subscriber":
+        acces="partial access to facilitate Dietary Services";
+        break;
+    case "Non-Subscriber":
+        acces="No acces. Need to enroll/ subscribe";
+        break;
 
+}
+console.log("Your acces is "+acces);
